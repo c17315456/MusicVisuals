@@ -15,6 +15,12 @@ public class Playit extends PApplet
 		bkimg = loadImage("images/wallpaper.jpg");
         //fullScreen(); 
     }
+	
+	void setup() 
+	{
+		
+	}
+
 
     public void draw()
     {

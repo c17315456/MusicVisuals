@@ -1,16 +1,17 @@
 package ie.tudublin;
 
 import processing.core.PImage;
-import processing.core.PApplet;
+//import processing.core.PApplet;
 
-import ddf.minim.*;
-import ddf.minim.analysis.FFT;
+import ie.tudublin.Visual;
 
-public class Playit extends PApplet 
+//import ddf.minim.*;
+//import ddf.minim.analysis.FFT;
+
+public class Playit extends Visual
 {
 
     PImage bkimg;
-	PImage KK;
 
     public void settings()
     {
@@ -21,17 +22,22 @@ public class Playit extends PApplet
     }
 	
 	
-		 public void setup()
-    {
-        colorMode(HSB);
-       
-     
-
+	public void setup()
+	{
         startMinim();
         loadAudio("Bubblegum.mp3");
-        getAudioPlayer().play();
-        //startListening(); 
+  		colorMode(HSB);
         
+    }
+	
+	
+	public void keyPressed()
+    {
+        if (key == ' ')
+        {
+            getAudioPlayer().cue(0);
+            getAudioPlayer().play();
+        }
     }
 	
 

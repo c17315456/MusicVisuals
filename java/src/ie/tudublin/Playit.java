@@ -1,7 +1,7 @@
 package ie.tudublin;
 
-//import ie.tudublin.Visual;
-
+import ie.tudublin.Visual;
+import ie.tudublin.VisualException;
 
 public class Playit extends Visual
 {
@@ -42,9 +42,16 @@ public class Playit extends Visual
     {
         background(0);
 		stroke(255);
+		strokeWeight(5);
+		mofill();
+		lights();
+		transate(width / 2, height / 2, 0);
+		rotateX(angle);		
+		rotateZ(angle);
+		
 		box(100);
 		
-		angle +=  0.1f;
+		angle +=  0.01f;
 		
 	}
 

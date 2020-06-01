@@ -54,6 +54,13 @@ public class Playit extends Visual
 		box(boxSize);
 		popMatrix();
 		
+		pushMatrix();
+		transate(width / 2, height / 2, 0);
+		rotateX(angle);		
+		rotateZ(angle);
+		float boxSize = 5 + (200 * getSmoothedAmplitude());
+		box(boxSize);
+		popMatrix();
 		
 		angle +=  0.01f;
 		

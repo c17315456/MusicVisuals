@@ -1,5 +1,6 @@
 package ie.tudublin;
 
+//import processing.core.PImage;
 //import processing.core.PApplet;
 
 import ie.tudublin.Visual;
@@ -16,7 +17,7 @@ public class Playit extends Visual
     {
         size(1000, 650, P3D);
         // Use fullscreen instead of size to make your interface fullscreen
-	
+		//bkimg = loadImage("images/wallpaper.jpg");
         //fullScreen(); 
     }
 	

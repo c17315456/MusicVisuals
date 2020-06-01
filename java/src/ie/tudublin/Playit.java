@@ -41,15 +41,19 @@ public class Playit extends Visual
     public void draw()
     {
         background(0);
-		stroke(255);
+		calculateAverageAmplitude();
+		stroke(map(getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
 		strokeWeight(5);
-		mofill();
+		noFill();
 		lights();
+		pushMatrix();
 		transate(width / 2, height / 2, 0);
 		rotateX(angle);		
 		rotateZ(angle);
+		float boxSize = 50 + (200 * getSmoothedAmplitude());
+		box(boxSize);
+		popMatrix();
 		
-		box(100);
 		
 		angle +=  0.01f;
 		

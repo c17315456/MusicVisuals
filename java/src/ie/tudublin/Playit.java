@@ -1,16 +1,11 @@
 package ie.tudublin;
 
-//import processing.core.PApplet;
-
 import ie.tudublin.Visual;
 
-//import ddf.minim.*;
-//import ddf.minim.analysis.FFT;
 
 public class Playit extends Visual
 {
 
-    //PImage bkimg;
 
     public void settings()
     {
@@ -39,6 +34,8 @@ public class Playit extends Visual
         }
     }
 	
+	float angle = 0;
+	
 
 
     public void draw()
@@ -47,7 +44,6 @@ public class Playit extends Visual
 		stroke(255);
 		box(100);
 		
-    
 	}
 
 

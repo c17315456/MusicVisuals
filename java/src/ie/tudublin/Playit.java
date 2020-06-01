@@ -1,6 +1,6 @@
 package ie.tudublin;
 
-import ie.tudublin.Visual;
+//import ie.tudublin.Visual;
 
 
 public class Playit extends Visual
@@ -43,6 +43,8 @@ public class Playit extends Visual
         background(0);
 		stroke(255);
 		box(100);
+		
+		angle +=  0.1f;
 		
 	}
 

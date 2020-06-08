@@ -50,16 +50,16 @@ public class Pthis extends Visual
 		transate(width / 2, height / 2, 0);
 		rotateX(angle);		
 		rotateZ(angle);
-		final float boxSize1 = 50 + (200 * getSmoothedAmplitude());
-        box(boxSize1);
+		float boxSize = 50 + (200 * getSmoothedAmplitude());
+        box(boxSize);
         popMatrix();
 
         pushMatrix();
         transate(width / 2, height / 2, 0);
         rotateX(angle);
         rotateZ(angle);
-        final float boxSize2 = 5 + (200 * getSmoothedAmplitude());
-		box(boxSize2);
+        //float boxSize2 = 5 + (200 * getSmoothedAmplitude());
+		box(boxSize - 45); //Will see if boxsize - int works
 		popMatrix();
 		
 		angle +=  0.01f;

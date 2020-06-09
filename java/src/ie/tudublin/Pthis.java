@@ -47,7 +47,7 @@ public class Pthis extends Visual
 		noFill();
 		lights();
 		pushMatrix();
-		transate(width / 2, height / 2, 0);
+		translate(width / 2, height / 2, 0);
 		rotateX(angle);		
 		rotateZ(angle);
 		final float boxSize1 = 50 + (200 * getSmoothedAmplitude());
@@ -55,7 +55,7 @@ public class Pthis extends Visual
         popMatrix();
 
         pushMatrix();
-        transate(width / 2, height / 2, 0);
+        translate(width / 2, height / 2, 0);
         rotateX(angle);
         rotateZ(angle);
         final float boxSize2 = 5 + (200 * getSmoothedAmplitude());

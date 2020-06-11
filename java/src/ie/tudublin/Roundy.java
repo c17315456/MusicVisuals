@@ -10,6 +10,29 @@ public class Roundy
     private float r;
     private float g;
     private float b;
-	// This one is a file to make a ellipse that interact with mp3 file 
+	private float diameter;
+    private float radius;
+    public float dropSpeed = 5
+	
+	
+    public Roundy (Pthis pthis,float x, float y, float diameter, float r, float g, float b)
+    {
+        this.pthis = pthis;
+        this.x = x;
+        this.y = y;
+        this.r = r;
+        this.g = g;
+        this.b = b;
+        this.diameter = diameter;
+    }
+
+
+    public void render()
+    {
+        //ui.noStroke();
+        //ui.fill(r,g,b);
+        ui.ellipse(x,y,diameter, diameter);
+    }
+
 		
 }

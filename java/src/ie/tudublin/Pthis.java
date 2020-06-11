@@ -5,6 +5,12 @@ import ie.tudublin.VisualException;
 
 public class Pthis extends Visual
 {
+	
+	//Circles
+	Roundy rd1;
+	Roundy rd2;
+	Roundy rd3;
+	Roundy rd4;
 
 
     public void settings()
@@ -50,8 +56,8 @@ public class Pthis extends Visual
 		translate(width / 2, height / 2, 0);
 		rotateX(angle);		
 		rotateZ(angle);
-		float boxSize = 300 * getSmoothedAmplitude();
-		//float boxSize = 50 + (300 * getSmoothedAmplitude());
+		//float boxSize = 300 * getSmoothedAmplitude();
+		float boxSize = 50 + (300 * getSmoothedAmplitude());
         box(boxSize);
         popMatrix();
 
@@ -60,8 +66,18 @@ public class Pthis extends Visual
         rotateX(angle);
         rotateZ(angle);
         //float boxSize2 = 5 + (200 * getSmoothedAmplitude());
-		box(boxSize - 5); //Will see if boxsize - int works
+		box(boxSize - 20); //Will see if boxsize - int works
 		popMatrix();
+		
+		pushMatrix();
+        translate(width / 2, height / 2, 0);
+        rotateX(angle);
+        rotateZ(angle);
+        //float boxSize2 = 5 + (200 * getSmoothedAmplitude());
+		box(boxSize + 20); //Will see if boxsize - int works
+		popMatrix();
+		
+		
 		
 		angle +=  0.01f;
 		

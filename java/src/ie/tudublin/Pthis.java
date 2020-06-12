@@ -27,6 +27,7 @@ public class Pthis extends Visual
         startMinim();
         loadAudio("Earth.mp3");
   		colorMode(HSB);
+		rd1 = new Roundy(this,200,200,100,map(getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
         
     }
 	

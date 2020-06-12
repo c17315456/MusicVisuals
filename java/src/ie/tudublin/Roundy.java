@@ -12,7 +12,6 @@ public class Roundy
     private float b;
 	private float diameter;
     private float radius;
-    public float dropSpeed = 5
 	
 	
     public Roundy (Pthis pthis,float x, float y, float diameter, float r, float g, float b)
@@ -32,6 +31,7 @@ public class Roundy
         //ui.noStroke();
         //ui.fill(r,g,b);
         ui.ellipse(x,y,diameter, diameter);
+		
     }
 
 		

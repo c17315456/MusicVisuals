@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+//import ie.tudublin.Visual;
 
 public class Roundy
 {
@@ -30,7 +31,7 @@ public class Roundy
     {
         //ui.noStroke();
         //ui.fill(r,g,b);
-        ui.ellipse(x,y,diameter, diameter);
+        pthis.ellipse(x,y,diameter, diameter);
 		
     }
 
